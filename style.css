@@ -1,0 +1,79 @@
+/*creates a blank canvas*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/*creates the parent. sets the height of the viewport (window used)
+use flexbot to j-c (horizontal) and a-c (vertical) center search bar*/
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.links{
+    font-size: 14px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: space-between;
+    
+}
+
+#about{
+    top:25px;
+    left:23px;
+    position:absolute;
+}
+
+#store{
+    top:25px;
+    left:50px;
+    position:absolute;
+}
+
+
+/*moves the search into position, rounds corners, aligns text, sets border*/
+.search-box{
+    position: absolute;
+    top: 39%;
+    height: 44px;
+    border-radius: 35px;
+    padding:13.3px;
+    width: 575px;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+}
+
+.search-box:hover{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.search-icon {
+    max-width: auto;
+    max-height: 120%;
+    filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(105deg) brightness(83%) contrast(94%);
+}
+
+.search-box > input {
+    flex: 1;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+
+}
+
+/* moving the google logo into position */
+#google-logo img{
+    position: absolute;
+    top: 31.4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

@@ -1,22 +1,162 @@
-/*creates a blank canvas*/
-*{
-    box-sizing: border-box;
+/*HEADER ------------------------------------- HEADER */
+
+/*creates the canvas, utilising whole browser space */
+html{
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
-li, a {
-    font-family: sans-serif;
-    font-size: 14px;   
-    text-decoration: none;
+/*creates the canvas, utilising whole browser space */
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-header {
+/*makes our display container, aligns them on the cross axis (middle),
+makes it b-b so that height and padding are included in size, f-s stops
+the container from shrinking or wrapping its content */
+.header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    box-sizing: border-box;
+    padding: 6px;
+    height: 60px;
+    flex-shrink: 0;
 }
+
+/*i-b lets you change the containers height, take underline away,
+move it off the edge of screen and make space between them */
+.link1-2:first-of-type {
+    margin-left: 10px;
+}
+
+.link1-2{
+    display: inline-block;
+    padding:5px;
+    margin: 0 5px;
+    text-decoration:none;
+    color: rgb(34, 34, 34)
+
+}
+/*creates the main container for the right links, f-g makes it take
+up the rest of the space of the footer */
+.right-links {
+    display: inline-block;
+    flex-grow: 1;
+}
+
+/*sets it to the height of the header container, width is size of how many objects
+inside it, set it to relative so that you can move things around in it ??????????? */
+.inner-div {
+    min-width:auto;
+    height:48px;
+    position: relative;
+
+}
+
+/*pushes the objects right, makes any words keep going even off the page,  call flex again to put the objects in a flex layout, aligns
+the elements, bring the box off the endge of the page, move the elements to the end of the box */
+.send-right {
+    float: right;
+    height: 48px;
+    line-height: normal;
+    white-space: nowrap;
+    align-items: center;
+    display: flex;
+    padding: 0 4px;
+    padding-left: 32px;
+    justify-content: flex-end;
+}
+
+.word-cont {
+    line-height: normal;
+    padding-right: 15px;
+    display: inline-block;
+    position: relative;
+    top: 13px;
+}
+
+.link3-4 {
+    display:inline-block;
+    padding-left: 15px;
+}
+
+#gmail {
+    display:inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: rgb(34, 34, 34)
+
+}
+
+#images {
+    display:inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: rgb(34, 34, 34)
+
+}
+
+.icons {
+    float:right;
+    position: relative;
+    white-space:nowrap;
+}
+
+.owrap-apps {
+    display:inline;
+}
+
+.iwrap-apps {
+    display:inline-block;
+    padding:4px;
+    vertical-align: middle;   
+}
+
+.fwrap-apps {
+    position: relative;
+}
+
+.action1 {
+    cursor:pointer;
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 2px;
+    box-sizing: border-box;
+    height:40px;
+    width: 40px;
+}
+
+.action2 {
+    cursor:pointer;
+    text-decoration: none;
+    padding:4px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 2px;
+    box-sizing: border-box;
+    height:40px;
+    width: 40px;
+}
+
+.profile {
+    background-size: 32px;
+    border-radius: 50%;
+    display:block;
+    position:relative;
+}
+
+/*HEADER ------------------------------------- HEADER */
+
+
 
 /*creates the parent. sets the height of the viewport (window used)
 use flexbot to j-c (horizontal) and a-c (vertical) center search bar*/
@@ -48,7 +188,7 @@ use flexbot to j-c (horizontal) and a-c (vertical) center search bar*/
 
 .search-icon {
     max-width: auto;
-    max-height: 120%;
+    max-height: 130%;
     filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(105deg) brightness(83%) contrast(94%);
 }
 

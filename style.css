@@ -40,7 +40,10 @@ move it off the edge of screen and make space between them */
     margin: 0 5px;
     text-decoration:none;
     color: rgb(34, 34, 34)
+}
 
+.link1-2:hover{
+    text-decoration: underline;
 }
 /*creates the main container for the right links, f-g makes it take
 up the rest of the space of the footer */
@@ -80,6 +83,7 @@ the elements, bring the box off the endge of the page, move the elements to the 
     top: 13px;
 }
 
+
 .link3-4 {
     display:inline-block;
     padding-left: 15px;
@@ -91,8 +95,12 @@ the elements, bring the box off the endge of the page, move the elements to the 
     vertical-align: middle;
     text-decoration: none;
     color: rgb(34, 34, 34)
-
 }
+
+#gmail:hover {
+    text-decoration: underline;
+}
+
 
 #images {
     display:inline-block;
@@ -100,7 +108,10 @@ the elements, bring the box off the endge of the page, move the elements to the 
     vertical-align: middle;
     text-decoration: none;
     color: rgb(34, 34, 34)
+}
 
+#images:hover {
+    text-decoration: underline;
 }
 
 .icons {
@@ -148,15 +159,27 @@ the elements, bring the box off the endge of the page, move the elements to the 
 }
 
 .profile {
-    background-size: 32px;
+    background-size: 32px 32px;
     border-radius: 50%;
     display:block;
     position:relative;
+    border: 0;
+    border-image-width: 1;
+}
+
+.profile:hover {
+    box-shadow: 0 0 0 2px rgba(0,0,0,.15);
+}
+
+.google-apps:hover {
+    box-shadow: 0 0 0 4px rgba(0,0,0,.15);
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.15);
 }
 
 /*HEADER ------------------------------------- HEADER */
 
-
+/*GOOOGLE AND SEARCH BOX---------------------------------------------*/
 
 /*creates the parent. sets the height of the viewport (window used)
 use flexbot to j-c (horizontal) and a-c (vertical) center search bar*/
@@ -172,8 +195,8 @@ use flexbot to j-c (horizontal) and a-c (vertical) center search bar*/
 /*moves the search into position, rounds corners, aligns text, sets border*/
 .search-box{
     position: absolute;
-    top: 39%;
-    height: 44px;
+    top: 40%;
+    height: 18px;
     border-radius: 35px;
     padding:13.3px;
     width: 575px;
@@ -188,7 +211,7 @@ use flexbot to j-c (horizontal) and a-c (vertical) center search bar*/
 
 .search-icon {
     max-width: auto;
-    max-height: 130%;
+    max-height: 107%;
     filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(105deg) brightness(83%) contrast(94%);
 }
 
@@ -208,4 +231,46 @@ use flexbot to j-c (horizontal) and a-c (vertical) center search bar*/
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/*GOOGLE AND SEARCH BOX ------------------------------------ */
+
+/*BOTTOM BUTTONS-------------------------------------------- */
+
+.button-box {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position:relative;
+    padding: 6px;
+    height: 55px;
+    flex-shrink: 0;
+    justify-content: center;
+    bottom: 59%;
+}
+
+.wrap-button {
+    padding: 0 10px;
+    display:inline-block;
+    position:relative;
+}
+
+.m-button {
+    padding: 0 4px;
+    display: inline-block;
+    position: relative;
+    border: 0;
+    height: 39px;
+    width: 158px;
+    background-color: #f8f9fa;
+    cursor:pointer;
+    border-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.m-button:hover {
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
 
